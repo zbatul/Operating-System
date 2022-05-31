@@ -1,0 +1,54 @@
+CS 621 – Operating System Design
+Programming Assignment #6
+Memory Allocation with malloc and free
+There are several goals for this assignment:
+1.	Learn about dynamic memory (heap) allocation. 
+2.	Learn about how tools work that check for memory errors. 
+3.	Learn about how Linux (UNIX) signal handlers work for capturing error conditions in your program. 
+4.	Write code that is a component - a library - instead of a complete program. 
+Your assignment is to write a special version of the malloc and free library routines that checks on common heap allocation and usage mistakes. Your version of malloc and free will be called malloc2 and free2. You will also write one extra function, memcheck2, for checking if a heap allocated memory address range is safe to use. 
+A programmer will use your versions of malloc and free wherever they would use the real ones. Your malloc2 and free2 will first check to see operation is safe and makes sense, and then call the real malloc or free to get the job done. In addition, whenever your program needs to access heap memory, they will insert a extra call to memcheck2 into their code to verify if that address range is valid. 
+Definitions of malloc2, free2 and memcheck2
+Here is a description of the functions that you will need to write: 
+
+void *malloc2(size_t size): 
+ 
+In addition to actually allocating the memory by calling malloc(), this function will record a tuple (addri, leni), for the memory that you allocate in the heap. You will get the starting address, addri, from the return value from malloc() and the length, leni, from the size parameter. You can check the size parameter for zero length (this is not actually an error, but unusual enough that it is worth reporting). 
+
+void free2(void *ptr): 
+ 
+This function will first check to make sure that freeing the memory specified by ptr makes sense, then will call free() to do the actual free. Some of the error conditions that you should check for include: 
+1.	Freeing memory that has not be allocated with malloc2(). 
+2.	Freeing memory that is not the first byte of the range of memory that was allocated. 
+3.	Freeing memory that was previously freed (double free). 
+When an error is detected, then print out a detailed and informative error message and exit the program (with a -1 status). If all checks pass, then this function removes the tuple for addr = ptr and calls free().
+
+void *realloc2(void *ptr, size_t size): 
+ 
+If ptr is NULL, then this follows the specification of malloc2() above. If size is zero and ptr is not NULL, then this follows the specification of free2() above. Otherwise, in addition to changing the memory allocation by calling realloc(), this function will first check to see if there was a tuple for the (addr = ptr, and removes that tuple, then adds a new one where addr is the return value from realloc() and len is size.
+
+void memcheck2(void *ptr, size_t size): 
+ 
+This function checks to see the address range specified by address ptr and length size are fully within a range allocated by malloc2() and memory not yet freed by free2(). When an error is detected, then print out a detailed and informative error message and exit the program (with a -1 status). 
+ 
+Here are some examples of its use, showing the memcheck2() call that you would insert into your code: 
+
+    char *buff = (char *)malloc (10);
+    char c;
+    struct node *np = (struct node *)malloc (sizeof(struct node));
+    struct node n;
+    int *ip = (int *)malloc (sizeof(int));
+
+    memcheck2 (&(buff[5]), 1);
+    c = buff[5];
+
+    memcheck2 (buff, strlen("hi mom!"));
+    strcpy(buff, "hi mom!");
+
+    memcheck2 (np, sizeof(struct node));
+    bcopy (&n, np, sizeof(struct node));
+
+Code Details and Testing
+An important part of your program will be a data structure that can efficiently handle range queries, which means looking up addresses within a range. This is not a simple data structure to implement efficiently. 
+You will write a module called malloc2.c with the four functions described above. In addition, you will provide an include file, malloc2.h, with the function prototypes exactly as described above. 
+Important: You should test your code with at least one test program by modifying the program to use your new heap routines instead of the standard ones, and insert calls to memcheck2 wherever heap allocated memory is used.
