@@ -1,0 +1,68 @@
+CS 621 – Operating System Design
+Programming Assignment #4
+Create and Compile a UNIX Kernel Module
+Introduction
+This programming assignment needs to be done on Ubuntu or other Linux operating system, which will be running inside a virtual machine (VM). The advantage of doing your OS homework in a VM is that it removes the need for a dedicated physical machine that you can crash when your OS code is buggy. Of course, if you do happen to have a spare physical machine, feel free to do your homework there after installing the 32-bit version of Ubuntu on it. 
+The VMM (virtual machine manager) that we will be using is called VirtualBox. 
+Notation
+In this and subsequent assignments, whenever there is a command that you might run on the terminal, it is indented and in a courier font: 
+ls ./ 
+Sometimes you will need to change the commands that is shown. In that case, I’ll put the text to be changed in square braces like this: 
+cd [directory]
+Getting Started
+Install Linux in a VM on your own.
+If you run your own VMM, for example on your laptop or home machine, there's no particular reason to use VirtualBox. You might want to look into VMware Player, for example; it is free for non-commercial use. 
+Grab a DVD image for Ubuntu at http://www.ubuntu.com/ or use another ISO for another Linux version of your choice. You don’t have to use Ubuntu for this class but it might be easier to follow these instructions if you do.
+Boot up a new virtual machine with at least 1 GB of RAM and 6 GB of hard disk space. Tell the VMM to mount the Ubuntu ISO. Install Ubuntu onto the virtual hard drive. There's no need to install any third-party software, just do the default installation. 
+Reboot the VM and login. 
+Install updates and also some modules that you will need in order to build kernel code: 
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install dkms build-essential
+Some packages that you might like and that you may find useful:
+sudo apt-get remove vim-common
+sudo apt-get install vim emacs23 git subversion
+Reboot the VM and login. Now you are ready to proceed with the lab. 
+If you can’t use apt-get or these instructions don’t work, check out this tutorial: http://www.cyberciti.biz/tips/compiling-linux-kernel-module.html
+Building and Installing a Kernel Module 
+NOTE: Instead of working in your home directory, it would be preferable to do this work in a subdirectory. This will avoid clutter, keep you from mixing up files from different homeworks, and make it easier to save your work off of the virtual machine. 
+Run these commands to grab a demo kernel module: 
+wget http://www.mcs.csueastbay.edu/~bhecker/CS-6560/Examples/Makefile
+wget http://www.mcs.csueastbay.edu/~bhecker/CS-6560/Examples/hello.c 
+Compile it: 
+make 
+Several files will be created by this, including the actual loadable kernel module "hello.ko". If this file does not now exist, there is a problem. You will need to troubleshoot this issue until you create this file.
+Now, load the module into the kernel: 
+sudo insmod hello.ko 
+Use this command to print the kernel log: 
+dmesg 
+The last message should include the string "Loading the hello module." Look in the hello.c file to see where this was printed. 
+You can try to do the following instead of viewing the entire output from dmesg: 
+dmesg | grep "hello" 
+Look at the list of currently loaded modules: 
+lsmod 
+The hello module should be one of them. 
+Now, remove your new module: 
+sudo rmmod hello 
+Make sure that the module is not present anymore and also make sure that "Unloading the hello kernel module." message appears in the log. 
+lsmod
+dmesg 
+You may have noticed that in hello.c, we called printk() instead of printf(). To see the full list of functions that can be called from a kernel module: 
+cat /proc/kallsyms | grep ' T ' 
+There are more than 13,000 functions available. Moreover, each module that is loaded can export additional functions that other modules can use. 
+Saving Your Work 
+Your home directory (and all other files) on the virtual machine are not backed up. To move files off of your virtual machine -- which you should do routinely in case it gets messed up somehow -- there are many options: 
+•	Dropbox or Google Drive 
+•	scp 
+•	a VirtualBox shared folder 
+•	a revision control system such as Git or Subversion (these are already installed for you if you are using our shared VM disk) 
+Use whichever of these you prefer. Just make sure to do it. 
+Your Assignment 
+Since the purpose of this homework is simply to debug your virtual machine workflow, your assignment is extremely simple: 
+•	Make a copy of hello.c called mymodule.c 
+•	Modify Makefile so that it builds mymodule.ko instead of hello.ko 
+•	Modify mymodule.c so that when it is loaded, it prints: 
+LOADING module, which was written by [name] 
+Upon being unloaded, it should print 
+UNLOADING module, which was written by [name] 
+Of course, [name] should be replaced by your name. 
