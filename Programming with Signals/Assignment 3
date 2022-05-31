@@ -1,0 +1,19 @@
+CS 621 – Operating System Design
+Programming Assignment #3
+
+Programming with Signals
+
+Overview
+You are probably used to interacting with processes via typing input into them and reading responses. In this assignment, we'll have some fun with another way of interacting with processes: signals. You'll write a simple program that responds to several signals in a variety of ways. 
+Objectives
+Your objective is to write a C program sig.c that, when invoked, waits for input from the user and echoes it back line-by-line (this is the default behavior). This program should execute on a Linux machine, and should be compiled with gcc. While echoing inputs, your program should also listen for several signals. Receipt of each signal should cause a different response from the program. 
+First, your program should schedule a SIGALRM (alarm) every ten seconds, and react to this signal by counting up seconds, by printing something like the following: 
+tick 0...  
+tick 10...  
+tick 20...
+
+as a running count. This will serve as a "heartbeat" to let you know that your program has not crashed.
+Second, the following signals should evoke behaviors as indicated: 
+1.	SIGINT should print a summary of all time spent by the program (system and user) and then continue running the program. 
+2.	SIGTERM should print a summary of all time spent in the program, and additionally exit the program 
+3.	SIGTSTP should print the last 10 lines of user input. 
