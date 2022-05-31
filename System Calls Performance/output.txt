@@ -1,0 +1,1097 @@
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_2bytes_file1.txt
+Write size: 2 bytes
+Number of write calls: 65536
+Time elapsed for write is: 500520 microseconds
+Time per write: 2 microseconds
+Time per byte: 1 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_2bytes_file2.txt
+Write size: 2 bytes
+Number of write calls: 65536
+Time elapsed for write is: 513068 microseconds
+Time per write: 2 microseconds
+Time per byte: 1 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_2bytes_file3.txt
+Write size: 2 bytes
+Number of write calls: 65536
+Time elapsed for write is: 516485 microseconds
+Time per write: 2 microseconds
+Time per byte: 1 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_2bytes_file4.txt
+Write size: 2 bytes
+Number of write calls: 65536
+Time elapsed for write is: 488929 microseconds
+Time per write: 2 microseconds
+Time per byte: 1 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_2bytes_file5.txt
+Write size: 2 bytes
+Number of write calls: 65536
+Time elapsed for write is: 494923 microseconds
+Time per write: 2 microseconds
+Time per byte: 1 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_2bytes_file6.txt
+Write size: 2 bytes
+Number of write calls: 65536
+Time elapsed for write is: 493426 microseconds
+Time per write: 2 microseconds
+Time per byte: 1 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_2bytes_file7.txt
+Write size: 2 bytes
+Number of write calls: 65536
+Time elapsed for write is: 519307 microseconds
+Time per write: 2 microseconds
+Time per byte: 1 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_2bytes_file8.txt
+Write size: 2 bytes
+Number of write calls: 65536
+Time elapsed for write is: 535948 microseconds
+Time per write: 2 microseconds
+Time per byte: 1 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_2bytes_file9.txt
+Write size: 2 bytes
+Number of write calls: 65536
+Time elapsed for write is: 496966 microseconds
+Time per write: 2 microseconds
+Time per byte: 1 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_2bytes_file10.txt
+Write size: 2 bytes
+Number of write calls: 65536
+Time elapsed for write is: 482250 microseconds
+Time per write: 2 microseconds
+Time per byte: 1 microseconds
+===================================================
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_16bytes_file1.txt
+Write size: 16 bytes
+Number of write calls: 8192
+Time elapsed for write is: 65421 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_16bytes_file2.txt
+Write size: 16 bytes
+Number of write calls: 8192
+Time elapsed for write is: 64260 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_16bytes_file3.txt
+Write size: 16 bytes
+Number of write calls: 8192
+Time elapsed for write is: 65492 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_16bytes_file4.txt
+Write size: 16 bytes
+Number of write calls: 8192
+Time elapsed for write is: 64949 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_16bytes_file5.txt
+Write size: 16 bytes
+Number of write calls: 8192
+Time elapsed for write is: 64699 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_16bytes_file6.txt
+Write size: 16 bytes
+Number of write calls: 8192
+Time elapsed for write is: 64842 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_16bytes_file7.txt
+Write size: 16 bytes
+Number of write calls: 8192
+Time elapsed for write is: 67523 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_16bytes_file8.txt
+Write size: 16 bytes
+Number of write calls: 8192
+Time elapsed for write is: 67292 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_16bytes_file9.txt
+Write size: 16 bytes
+Number of write calls: 8192
+Time elapsed for write is: 64846 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_16bytes_file10.txt
+Write size: 16 bytes
+Number of write calls: 8192
+Time elapsed for write is: 65233 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+===================================================
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_128bytes_file1.txt
+Write size: 128 bytes
+Number of write calls: 1024
+Time elapsed for write is: 7511 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_128bytes_file2.txt
+Write size: 128 bytes
+Number of write calls: 1024
+Time elapsed for write is: 8180 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_128bytes_file3.txt
+Write size: 128 bytes
+Number of write calls: 1024
+Time elapsed for write is: 7950 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_128bytes_file4.txt
+Write size: 128 bytes
+Number of write calls: 1024
+Time elapsed for write is: 8367 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_128bytes_file5.txt
+Write size: 128 bytes
+Number of write calls: 1024
+Time elapsed for write is: 8121 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_128bytes_file6.txt
+Write size: 128 bytes
+Number of write calls: 1024
+Time elapsed for write is: 8864 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_128bytes_file7.txt
+Write size: 128 bytes
+Number of write calls: 1024
+Time elapsed for write is: 7822 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_128bytes_file8.txt
+Write size: 128 bytes
+Number of write calls: 1024
+Time elapsed for write is: 8894 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_128bytes_file9.txt
+Write size: 128 bytes
+Number of write calls: 1024
+Time elapsed for write is: 8870 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_128bytes_file10.txt
+Write size: 128 bytes
+Number of write calls: 1024
+Time elapsed for write is: 8235 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+===================================================
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_1024bytes_file1.txt
+Write size: 1024 bytes
+Number of write calls: 128
+Time elapsed for write is: 1018 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_1024bytes_file2.txt
+Write size: 1024 bytes
+Number of write calls: 128
+Time elapsed for write is: 1003 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_1024bytes_file3.txt
+Write size: 1024 bytes
+Number of write calls: 128
+Time elapsed for write is: 1053 microseconds
+Time per write: 3 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_1024bytes_file4.txt
+Write size: 1024 bytes
+Number of write calls: 128
+Time elapsed for write is: 1031 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_1024bytes_file5.txt
+Write size: 1024 bytes
+Number of write calls: 128
+Time elapsed for write is: 1001 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_1024bytes_file6.txt
+Write size: 1024 bytes
+Number of write calls: 128
+Time elapsed for write is: 1022 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_1024bytes_file7.txt
+Write size: 1024 bytes
+Number of write calls: 128
+Time elapsed for write is: 1213 microseconds
+Time per write: 3 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_1024bytes_file8.txt
+Write size: 1024 bytes
+Number of write calls: 128
+Time elapsed for write is: 1021 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_1024bytes_file9.txt
+Write size: 1024 bytes
+Number of write calls: 128
+Time elapsed for write is: 972 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_1024bytes_file10.txt
+Write size: 1024 bytes
+Number of write calls: 128
+Time elapsed for write is: 1020 microseconds
+Time per write: 2 microseconds
+Time per byte: 0 microseconds
+===================================================
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_8192bytes_file1.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 373 microseconds
+Time per write: 6 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_8192bytes_file2.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 499 microseconds
+Time per write: 8 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_8192bytes_file3.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 427 microseconds
+Time per write: 6 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_8192bytes_file4.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 472 microseconds
+Time per write: 9 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_8192bytes_file5.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 314 microseconds
+Time per write: 5 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_8192bytes_file6.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 339 microseconds
+Time per write: 5 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_8192bytes_file7.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 309 microseconds
+Time per write: 4 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_8192bytes_file8.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 369 microseconds
+Time per write: 5 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_8192bytes_file9.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 370 microseconds
+Time per write: 6 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_8192bytes_file10.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 318 microseconds
+Time per write: 5 microseconds
+Time per byte: 0 microseconds
+===================================================
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_65536bytes_file1.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 316 microseconds
+Time per write: 5 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_65536bytes_file2.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 314 microseconds
+Time per write: 4 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_65536bytes_file3.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 326 microseconds
+Time per write: 5 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_65536bytes_file4.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 358 microseconds
+Time per write: 5 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_65536bytes_file5.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 414 microseconds
+Time per write: 5 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_65536bytes_file6.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 423 microseconds
+Time per write: 5 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_65536bytes_file7.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 428 microseconds
+Time per write: 6 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_65536bytes_file8.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 321 microseconds
+Time per write: 5 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_65536bytes_file9.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 321 microseconds
+Time per write: 4 microseconds
+Time per byte: 0 microseconds
+
+***UNIX write system call***
+
+FILE NAME: /tmp/write_test_65536bytes_file10.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 343 microseconds
+Time per write: 4 microseconds
+Time per byte: 0 microseconds
+===================================================
+
+*************************************************
+*************************************************
+*************************************************
+
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_2bytes_file1.txt
+Write size: 2 bytes
+Number of write calls: 65537
+Time elapsed for write is: 294665 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_2bytes_file2.txt
+Write size: 2 bytes
+Number of write calls: 65537
+Time elapsed for write is: 285235 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_2bytes_file3.txt
+Write size: 2 bytes
+Number of write calls: 65537
+Time elapsed for write is: 285529 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_2bytes_file4.txt
+Write size: 2 bytes
+Number of write calls: 65537
+Time elapsed for write is: 283791 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_2bytes_file5.txt
+Write size: 2 bytes
+Number of write calls: 65537
+Time elapsed for write is: 284265 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_2bytes_file6.txt
+Write size: 2 bytes
+Number of write calls: 65537
+Time elapsed for write is: 285522 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_2bytes_file7.txt
+Write size: 2 bytes
+Number of write calls: 65537
+Time elapsed for write is: 277234 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_2bytes_file8.txt
+Write size: 2 bytes
+Number of write calls: 65537
+Time elapsed for write is: 277386 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_2bytes_file9.txt
+Write size: 2 bytes
+Number of write calls: 65537
+Time elapsed for write is: 282241 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_2bytes_file10.txt
+Write size: 2 bytes
+Number of write calls: 65537
+Time elapsed for write is: 280424 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+===================================================
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_16bytes_file1.txt
+Write size: 16 bytes
+Number of write calls: 8193
+Time elapsed for write is: 38565 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_16bytes_file2.txt
+Write size: 16 bytes
+Number of write calls: 8193
+Time elapsed for write is: 38550 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_16bytes_file3.txt
+Write size: 16 bytes
+Number of write calls: 8193
+Time elapsed for write is: 37172 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_16bytes_file4.txt
+Write size: 16 bytes
+Number of write calls: 8193
+Time elapsed for write is: 38376 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_16bytes_file5.txt
+Write size: 16 bytes
+Number of write calls: 8193
+Time elapsed for write is: 38664 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_16bytes_file6.txt
+Write size: 16 bytes
+Number of write calls: 8193
+Time elapsed for write is: 37805 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_16bytes_file7.txt
+Write size: 16 bytes
+Number of write calls: 8193
+Time elapsed for write is: 38169 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_16bytes_file8.txt
+Write size: 16 bytes
+Number of write calls: 8193
+Time elapsed for write is: 37854 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_16bytes_file9.txt
+Write size: 16 bytes
+Number of write calls: 8193
+Time elapsed for write is: 39930 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_16bytes_file10.txt
+Write size: 16 bytes
+Number of write calls: 8193
+Time elapsed for write is: 38562 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+===================================================
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_128bytes_file1.txt
+Write size: 128 bytes
+Number of write calls: 1025
+Time elapsed for write is: 5791 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_128bytes_file2.txt
+Write size: 128 bytes
+Number of write calls: 1025
+Time elapsed for write is: 5070 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_128bytes_file3.txt
+Write size: 128 bytes
+Number of write calls: 1025
+Time elapsed for write is: 4555 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_128bytes_file4.txt
+Write size: 128 bytes
+Number of write calls: 1025
+Time elapsed for write is: 6445 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_128bytes_file5.txt
+Write size: 128 bytes
+Number of write calls: 1025
+Time elapsed for write is: 6057 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_128bytes_file6.txt
+Write size: 128 bytes
+Number of write calls: 1025
+Time elapsed for write is: 4875 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_128bytes_file7.txt
+Write size: 128 bytes
+Number of write calls: 1025
+Time elapsed for write is: 5496 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_128bytes_file8.txt
+Write size: 128 bytes
+Number of write calls: 1025
+Time elapsed for write is: 5446 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_128bytes_file9.txt
+Write size: 128 bytes
+Number of write calls: 1025
+Time elapsed for write is: 4631 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_128bytes_file10.txt
+Write size: 128 bytes
+Number of write calls: 1025
+Time elapsed for write is: 5534 microseconds
+Time per write: 0 microseconds
+Time per byte: 0 microseconds
+===================================================
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_1024bytes_file1.txt
+Write size: 1024 bytes
+Number of write calls: 129
+Time elapsed for write is: 813 microseconds
+Time per write: 1 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_1024bytes_file2.txt
+Write size: 1024 bytes
+Number of write calls: 129
+Time elapsed for write is: 783 microseconds
+Time per write: 1 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_1024bytes_file3.txt
+Write size: 1024 bytes
+Number of write calls: 129
+Time elapsed for write is: 857 microseconds
+Time per write: 1 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_1024bytes_file4.txt
+Write size: 1024 bytes
+Number of write calls: 129
+Time elapsed for write is: 791 microseconds
+Time per write: 1 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_1024bytes_file5.txt
+Write size: 1024 bytes
+Number of write calls: 129
+Time elapsed for write is: 798 microseconds
+Time per write: 1 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_1024bytes_file6.txt
+Write size: 1024 bytes
+Number of write calls: 129
+Time elapsed for write is: 732 microseconds
+Time per write: 1 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_1024bytes_file7.txt
+Write size: 1024 bytes
+Number of write calls: 129
+Time elapsed for write is: 781 microseconds
+Time per write: 1 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_1024bytes_file8.txt
+Write size: 1024 bytes
+Number of write calls: 129
+Time elapsed for write is: 742 microseconds
+Time per write: 1 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_1024bytes_file9.txt
+Write size: 1024 bytes
+Number of write calls: 129
+Time elapsed for write is: 742 microseconds
+Time per write: 1 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_1024bytes_file10.txt
+Write size: 1024 bytes
+Number of write calls: 129
+Time elapsed for write is: 834 microseconds
+Time per write: 1 microseconds
+Time per byte: 0 microseconds
+===================================================
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_8192bytes_file1.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 439 microseconds
+Time per write: 8 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_8192bytes_file2.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 499 microseconds
+Time per write: 9 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_8192bytes_file3.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 363 microseconds
+Time per write: 6 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_8192bytes_file4.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 405 microseconds
+Time per write: 7 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_8192bytes_file5.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 439 microseconds
+Time per write: 8 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_8192bytes_file6.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 521 microseconds
+Time per write: 8 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_8192bytes_file7.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 722 microseconds
+Time per write: 12 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_8192bytes_file8.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 549 microseconds
+Time per write: 9 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_8192bytes_file9.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 484 microseconds
+Time per write: 9 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_8192bytes_file10.txt
+Write size: 8192 bytes
+Number of write calls: 32
+Time elapsed for write is: 674 microseconds
+Time per write: 13 microseconds
+Time per byte: 0 microseconds
+===================================================
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_65536bytes_file1.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 425 microseconds
+Time per write: 7 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_65536bytes_file2.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 370 microseconds
+Time per write: 6 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_65536bytes_file3.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 454 microseconds
+Time per write: 8 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_65536bytes_file4.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 512 microseconds
+Time per write: 9 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_65536bytes_file5.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 623 microseconds
+Time per write: 11 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_65536bytes_file6.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 471 microseconds
+Time per write: 8 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_65536bytes_file7.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 520 microseconds
+Time per write: 9 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_65536bytes_file8.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 407 microseconds
+Time per write: 6 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_65536bytes_file9.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 381 microseconds
+Time per write: 6 microseconds
+Time per byte: 0 microseconds
+
+***I/O routine fwrite***
+
+FILE NAME: /tmp/fwrite_test_65536bytes_file10.txt
+Write size: 65536 bytes
+Number of write calls: 32
+Time elapsed for write is: 354 microseconds
+Time per write: 5 microseconds
+Time per byte: 0 microseconds
+===================================================
+
