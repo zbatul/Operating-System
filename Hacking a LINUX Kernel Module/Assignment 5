@@ -1,0 +1,52 @@
+CS 621 – Operating System Design
+Programming Assignment #5
+
+Hacking a Linux Kernel Module
+For this assignment, you will hack a Linux kernel module. Please refer to the previous assignment for instructions about how to compile these modules, load and unload them, etc. You may also refer to any of the several books about writing Linux device drivers and to any of the many web pages about this same topic. In short, use whatever resources you like but you must not copy code from your classmates, or even look at their code. You are also not allowed to copy and use source code found on the internet. You are required to do your own work. 
+Accessing Character Devices
+A character device is one of the three major kinds of UNIX device drivers; the others are block devices for things like hard disks and network devices. Character devices are those that read and write byte-oriented data from and to hardware devices such as mice, serial and parallel ports, and terminals. 
+UNIX devices are exposed through the file system. To see them run these commands: 
+cd /dev
+ls -l
+The device files with a "c" in the very left-most column of text are the character devices. Towards the middle of the text (just to the left of the month) is a pair of numbers separated by a comma. The first of these is the major number which generally identifies the device driver that exports this device file. The second is the minor number which identifies the device instance provided by the driver (it is common for a single kernel module to support many different device files). 
+Another way to learn about character device drivers is like this: 
+cd /proc
+cat devices
+This lists both the character and block device drivers that are currently loaded. At the left is the list of major numbers. 
+Next, go ahead and read from the mouse device (there's no need to shut down the windowing system, turns out you can do this anytime): 
+cd /dev/input
+sudo bash -c "cat < mouse0"
+Then move the mouse. If you don't see any data, try mouse1 and mouse2. The "bash -c" code is used to run the entire command as root. If you type this it won't work: 
+cd /dev/input
+sudo cat < mouse0
+Other interesting character devices on a Linux machine include: 
+•	/dev/zero -- an infinite supply of 0 bytes 
+•	/dev/null -- discards all data written into it 
+•	/dev/random -- limited source of random bytes (try catting it and then move the mouse again -- why do you think this happens?) 
+•	/dev/urandom -- unlimited source of pseudorandom bytes, you can also cat this one 
+Now write a little C program to access some character device files. It should be a single file called dev_access.c and its specification is as follows: 
+•	if given the command line argument "0" it opens /dev/input/mouse0 and then in an infinite loop uses the read() system call to read a single byte at a time; as these bytes are read, they are printed to STDOUT as integer values, one value per line (this will only work when you run the program as root) 
+•	if given the command line argument "1" it opens /dev/urandom for reading and /dev/null for writing and then reads 10 MB of pseudorandomness, dumping it to /dev/null and printing the total elapsed time taken to do this using a pair of gettimeofday() calls; you are to do this using as few read() and write() calls as possible; in other words, the inital read() should be passed a count parameter of 10,000,000 and subsequent calls should be for fewer bytes as appropriate; you must correctly handle the situation where read() and write() do not process as many bytes as you asked for 
+•	You must check the return value of every system call. If a system call fails, print something informative and exit. Use the man pages to learn about return codes. 
+•	You must perform error checking for the command line arguments. If the number of arguments is not exactly one, if this argument is not an integer, or if this integer is out of range, you must print an informative error message and exit. 
+•	Your program must compile successfully using this command line:
+gcc -O2 -Wall -Wextra -Werror dev_access.c -o dev_access
+However, if you are getting crashes you should enable debugging support and turn off the optimizer:
+gcc -g -O0 -Wall -Wextra -Werror dev_access.c -o dev_access 
+You'll be modifying this program in the next section. 
+
+
+Writing a Character Device Driver
+Grab the file ticket.c from http://borg.csueastbay.edu/~bhecker/CS-621/Examples/ticket.c which is a character device driver that doesn't do anything yet. You are going to turn this file into a driver that serves up tickets to user-mode processes like at the bakery or the DMV. In other words, each time an integer is read from this device it will get the next value in order. The first process to read from this device gets 1000, the second gets 1001, etc. 
+Here's an explanation of the code that's already there: 
+•	ticket_dev is a struct stores the state of the ticket device; that way, later on we can make this driver support multiple ticket queues if we want to 
+•	ticket_open is called when someone tries to open /dev/ticket0, you will not need to modify it 
+•	ticket_release is the opposite of open, you will not need to modify it either; it isn't called close since it isn't called until all references to the open file go away 
+•	ticket_read is called when someone reads from the ticket device, your code will go here. notice the mutex lock: this is necessary to ensure that the device code runs atomically 
+•	ticket_write and ticket_lseek just return errors since this device does not support those operations 
+•	ticket_fops is how we tell the Linux kernel where to find the code implementing the operations for our driver 
+•	ticket_construct_device registers our functionality with the Linux kernel and makes it appear in the /dev tree 
+•	the rest of the file doesn't concern us right now--- it is standard device driver bookkeeping code 
+Now compile this driver and load it into the kernel. Make sure that lsmod shows that it is present. Also verify that /dev/ticket0 exists and that /proc/devices lists your new driver. Now unload the module and you can start hacking it. 
+First, add a new variable to ticket_dev to store the current ticket number. Make sure it gets initialized to 1000. Now, modify ticket_read so that it returns ticket numbers to processes. You should only support reads where the count parameter is equal to 4 (since integers are 4 bytes). Return -EINVAL if a process attempts to read a different number of bytes. Make sure that you do not exit this function without releasing the mutex, or bad things will happen and you'll need to reboot your VM. You are not allowed to directly touch user memory from the kernel. Instead, to put data into a process's memory space, use the copy_to_user function. You can use it basically like memcpy, although a lot more is going on behind the scenes. If copy_to_user does not return 0, it has failed, in which case you should not increment the ticket counter. Make sure that successful reads return the number of bytes read. 
+Now test your ticket device. Build it and load it into the kernel. Modify dev_access.c so that when it gets command line argument "2", it opens the ticket device and reads it 10 times, sleeping for 1 second in between reads, and printing the values that are read to STDOUT. Run several instances of dev_access from different terminals at the same time, and make sure that nobody gets the same ticket. Make sure that every read() call returns 4. Unless you make /dev/ticket0 world-readable, you will have to run dev_access as root. There are better solutions involving a system service called udev but we're not going to worry about that right now. 
