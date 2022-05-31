@@ -1,0 +1,20 @@
+CS 621 – Operating System Design 
+Programming Assignment #2 
+
+ 
+
+Use each of the concurrency techniques:  
+
+semaphores  
+
+message passing  
+
+To solve the following concurrency problem: 
+
+A parking lot with a capacity of N cars is on an island. A ferry with a capacity of M cars shuttles cars between the mainland and the island. The ferry may cross whenever there are no cars waiting to get on the ferry (even if it is not full) provided that there are cars waiting on the other side. The ferry may also cross whenever it is full or (in the case of crossing to the island) when the number of cars in the ferry would fill the parking lot.  
+
+You are to avoid deadlock and starvation. You may assume that the system contains more than N cars and that N is greater than M. Your program must be demonstrably correct. I will not read code for the purposes of checking correctness. Your description of the algorithm should make its correctness clear and demonstrate the techniques of semaphores and message passing. 
+
+DO NOT copy or use ANY source code found on the Internet or from other sources. Write the source code yourself, from scratch. Any code copied or modified from the Internet or other sources will NOT receive credit. DO NOT work together with other students. Any students turning in the same or modified versions of the same source code will NOT receive credit. This assignment can ONLY be submitted one time for credit. 
+
+You may write this program in any programming language that supports threads such as C, C++, Java, or Python. I highly recommend using Java since most of the programming is done for you in the language library support. 
