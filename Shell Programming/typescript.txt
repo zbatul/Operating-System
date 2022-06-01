@@ -1,0 +1,49 @@
+Script started on 2020-03-02 19:43:06-0800
+]0;batul@batul-VirtualBox: ~/ProgrammingOS/Program2[01;32mbatul@batul-VirtualBox[00m:[01;34m~/ProgrammingOS/Program2[00m$ bzshell
+Welcome to bzshell. My pid is 21093.
+bzshell[0]: cp bzshell tempfile
+[Child pid = 21094, Background = FALSE]
+Child process complete.
+bzshell[1]: ls -l tempfile
+[Child pid = 21095, Background = FALSE]
+-rwxr-xr-x 1 batul batul 14016 Mar  2 19:43 tempfile
+Child process complete.
+bzshell[2]: time -p sleep 5
+[Child pid = 21096, Background = FALSE]
+real 5.00
+user 0.00
+sys 0.00
+Child process complete.
+bzshell[3]: time -p sleep 15 &
+[Child pid = 21098, Background = TRUE]
+bzshell[4]: date
+[Child pid = 21100, Background = FALSE]
+Mon Mar  2 19:43:53 PST 2020
+Child process complete.
+bzshell[5]: real 15.00
+user 0.00
+sys 0.00
+bzshell[6]: whisper WHAT A GREAT DAY
+what a great day 
+bzshell[7]: ^\
+HISTORY: LAST 10 COMMANDS
+1. whisper WHAT A GREAT DAY
+2. date
+3. time -p sleep 15 &
+4. time -p sleep 5
+5. ls -l tempfile
+6. cp bzshell tempfile
+
+bzshell[8]: r
+Command : whisper WHAT A GREAT DAY
+what a great day 
+bzshell[9]: r 2
+Command : whisper WHAT A GREAT DAY
+what a great day 
+bzshell[10]: exit
+  PID  PPID %CPU %MEM     ELAPSED USER     COMMAND
+21093 21085  0.0  0.0       01:26 batul    bzshell
+]0;batul@batul-VirtualBox: ~/ProgrammingOS/Program2[01;32mbatul@batul-VirtualBox[00m:[01;34m~/ProgrammingOS/Program2[00m$ exit
+exit
+
+Script done on 2020-03-02 19:44:40-0800
